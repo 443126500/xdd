@@ -191,13 +191,13 @@ var handleMessage = func(msgs ...interface{}) interface{} {
 							nck.InPool(ck.PtKey)
 							msg := fmt.Sprintf("更新账号，%s", ck.PtPin)
 							(&JdCookie{}).Push(msg)
-							sendMessagee("许愿币+1", msgs...)
+							sendMessagee("不会再有许愿了！", msgs...)
 							logs.Info(msg)
 						} else {
 							NewJdCookie(&ck)
 							msg := fmt.Sprintf("添加账号，%s", ck.PtPin)
 							(&JdCookie{}).Push(msg)
-							sendMessagee("许愿币+1", msgs...)
+							sendMessagee("不会再有许愿了！", msgs...)
 							logs.Info(msg)
 						}
 					}
